@@ -1,0 +1,21 @@
+{
+  "name": "cloudflare-email-relay",
+  "version": "1.0.0",
+  "description": "Cloudflare Email Routing webhook server for Google Cloud Shell",
+  "main": "cloudflare_webhook_server.js",
+  "scripts": {
+    "start": "node cloudflare_webhook_server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mailparser": "^3.6.5"
+  },
+  "keywords": [
+    "cloudflare",
+    "email",
+    "webhook",
+    "relay"
+  ],
+  "author": "SIBOU3AZA Email System",
+  "license": "MIT"
+}
