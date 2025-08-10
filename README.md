@@ -16,11 +16,11 @@ Log in to your new server as `root` and run these commands.
 
 1.  **Update System Packages:**
     ```bash
-    apt update && apt upgrade -y
+    apt apt-get update
     ```
 2.  **Install Core Software:** This installs Postfix, OpenDKIM, and other utilities.
     ```bash
-    apt install -y postfix opendkim opendkim-tools mailutils dnsutils curl
+    sudo apt install -y postfix opendkim opendkim-tools mailutils dnsutils curl
     ```
     *   During the Postfix installation, a pink screen will appear. Select **Internet Site** and press Enter.
     *   For **System mail name**, enter your domain (e.g., `2canrescue.org`) and press Enter.
@@ -411,4 +411,5 @@ This script will immediately kill all sending processes and clear the mail queue
     echo "--- ALL OPERATIONS HALTED ---"
     ```
 3.  Make it executable: `chmod +x emergency_stop.sh`
+
 4.  Run it when needed: `sudo ./emergency_stop.sh`
